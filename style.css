@@ -52,7 +52,7 @@ img {
 }
 
 .logo {
-    color: #f56349;
+    color: #258980;
     font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
@@ -71,8 +71,8 @@ img {
     font-weight: 600;
 }
 
-.menu .navbar ul li a :hover {
-    color: #f56349;
+.menu .navbar ul li a:hover {
+    color:  #258980;
 }
 
 #menu {
@@ -137,7 +137,7 @@ p {
 span {
     font-size: 14px;
     text-transform: uppercase;
-    color: #f56349;
+    color: #258980;
 }
 
 h2 {
@@ -148,7 +148,7 @@ h2 {
 }
 
 hr {
-    border: 1px solid #f56349;
+    border: 1px solid #258980;
     width: 10%;
     margin-bottom: 30px;
 }
@@ -160,6 +160,7 @@ hr {
 
 .about-img img {
     border-radius: 15px;
+    filter: brightness(0.4);
 }
 
 .testimonial {
@@ -197,7 +198,7 @@ hr {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 4px solid #f56349;
+    border: 4px solid #258980;
     margin-bottom: 15px;
 }
 
@@ -337,13 +338,12 @@ input {
 }
 
 .contact {
-    padding: 150px;
+    padding: 100px;
     background: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
     ),
     url(images/Garra.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 
@@ -351,6 +351,10 @@ input {
 
 .contact-content {
     text-align: center;
+}
+
+.contact{
+    background-attachment: fixed;
 }
 
 .footer {
@@ -378,7 +382,7 @@ input {
 }
 
 .link a:hover {
-    color: #f56349;
+    color: #258980;
 }
 
 @media(max-width:991px) {
@@ -395,7 +399,7 @@ input {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #ff7838;
+        background-color: #64a199;
         display: none;
     }
 
@@ -482,6 +486,7 @@ input {
 
     .contact {
         padding: 100px 30px;
+        
     }
 
     .footer {
