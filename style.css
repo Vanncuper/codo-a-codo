@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
 
-/*
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +14,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -49,15 +45,31 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .logo {
-    color: #258980;
-    font-size: 25px;
-    font-weight: 800;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
 }
 
+.logo-img {
+    width: 100px;
+    height: auto;
+    opacity: 0,9;
+    transition: opacity 0,3s ease;
+   }
+
+.logo-img:hover {
+    opacity: 1;
+}
+
+.logo-img {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 2px;
+}
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -302,6 +314,10 @@ hr {
     padding: 80px 0 0 0;
 }
 
+.information-img img {
+    opacity: 0.5; 
+}
+
 input {
     display: block;
     padding: 17px;
@@ -357,6 +373,7 @@ input {
 
 .blog-1 img {
     margin-bottom: 15px;
+    opacity: 0.5;
 }
 
 .blog-txt {
