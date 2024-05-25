@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Calcular el IMC
             var imc = peso / Math.pow(altura, 2);
 
-            // Mostrar el resultado del IMC en algún lugar de la página
+            // Mostrar el resultado del IMC debajo del botón Calcular
             var resultadoIMC = document.getElementById('resultado-imc');
             resultadoIMC.textContent = "Tu índice de masa corporal es: " + imc.toFixed(2);
         } else {
