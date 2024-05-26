@@ -23,7 +23,8 @@ img {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .header {
@@ -52,10 +53,15 @@ img {
 }
 
 .logo {
-    color: #258980;
-    font-size: 25px;
-    font-weight: 800;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center; /* Asegura que la imagen del logo esté centrada verticalmente */
+    margin-right: auto;  /* Empuja la imagen hacia la izquierda si hay otros elementos en la barra de navegación */
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que no haya espacio adicional alrededor de la imagen */
 }
 
 .menu .navbar ul li {
