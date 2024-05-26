@@ -1,98 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../images/favicon/favicon-16x16.png" >
-    <title>HALLCROSS - Contacto</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-     
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">
-                <img src="images/logo.cambio.jpg" alt="logo de pagina" class="logo-img">
-            </a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="menu">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="inicio.html">inicio</a></li>
-                    <li><a href="servicios.html">servicio</a></li>
-                    <li><a href="productos.html">productos</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </div>
 
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>HALLCROSS</h1>
-                <p>
-                         Bienvenidos a HALLCROSS: 
-                    ¡Entrena, diviértete y desconéctate!
-                    Especialmente diseñad@ para vos, busca lo diferente!... 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - HALLCROSS</title>
+        <link rel="stylesheet" href="stylecontacto.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="images/LOGO.png" alt="Logo de HALLCROSS"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
                     
-                </p>
-                <a href="#" class="btn-1">informacion</a>
-            </div>
-        </div>
-    </header>    
-   
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+               
+                <fieldset>
+                    <legend>¿En qué horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de HALLCROSS?</label>                
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
 
-   
-
-
-
-
-
-    <section class="contact">
-
-        <div class="contact-content">
-            <span>HALLCROSS</span>
-            <h2>1130960485</h2>
-            <p>
-                Los pasos firmes son cambios, empieza hoy, que el cambio te esta esperando!
-            </p>
-            <a href="#" class="btn-1">información</a>
-
-        </div>
-
-    </section>
-
-    <footer class="footer">
-
-        <div class="footer-content container">
-
-            <div class="link">
-                <h3>CONTACTO</h3>
-                <ul>
-                    <li><a href="mailto:hallcross@gmail.com">contacto@hallcross.com</a></li>
-                    <li><a href="+1130960485">113096-0485</a></li>
-                    <li><a href="#">Sarandi 945</a></li>
-                    <li><a href="#">Bs. As.</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>SÍGUENOS</h3>
-                <ul>
-                    <li><a href="https://www.faceboock.com/hallcross">faceboock</a></li>
-                    <li><a href="https://www.instagram.com/hallcross">instagram</a></li>
-                    <li><a href="https://www.twiter.com/hallcross">X</a></li>
-                    <li><a href="https://www.linkedin.com/hallcross">linkedin</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>POLÍTICAS</h3>
-                <ul>
-                    <li><a href="#">Políticas de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Uso de imágenes</a></li>
-                    <li><a href="#">Cobertura de emergencias</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+            </form>
+        </main>
+        <footer>
+            <img src="images/LOGO.png"  alt="Logo de HALLCROSS">
+            <p class="copyright">&copy Copyright HALLCROSS - 2024</p>
+        </footer>
+    </body>
+</html>
