@@ -1,65 +1,112 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon-16x16.png">
         <title>Contacto - HALLCROSS</title>
-        <link rel="stylesheet" href="stylecontacto.css">
+        <link rel="stylesheet" href="./stylecontacto.css">
     </head>
     <body>
-        <header>
-            <div class="caja">
-                <h1><img src="images/LOGO.png" alt="Logo de HALLCROSS"></h1>
-                <nav>
+        <header class="header">
+            <div class="menu container">
+                <a href="./index.html" class="logo">
+                    <img src="images/LOGO.png" alt="HALLCROSS Logo">
+                </a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icono" alt="Menu Icon">
+                </label>
+                <nav class="navbar">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicio</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>HALLCROSS</h1>
+                    <p>Especialmente diseñado y equipado para que acudas a realizar una actividad física en diversas intensidades. El propósito es estimular tus músculos a través de ejercicios adecuados a tus necesidades y condiciones.</p>
+                    <a href="#" class="btn-1">Información</a>
+                </div>
             </div>
         </header>
         <main>
             <form>
                 <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
-
+                <input type="text" id="nombreapellido" class="input-padron">
+                <div class="error" id="error-name"></div>
                 <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-
+                <input type="email" id="correoelectronico" class="input-padron"  placeholder="email@dominio.com">
+                <div class="error" id="error-email"></div>
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-
+                <input type="tel" id="telefono" class="input-padron"  placeholder="(XX) XXXX XXXX">
+                <div class="error" id="error-telefono"></div>
                 <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-                
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+                <div class="error" id="error-message"></div>
                 <fieldset>
                     <legend>¿Cómo le gustaría que lo contactemos?</legend>
-
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                    
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                    
-                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radioemail">Email</label>
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radiotelefono">Teléfono</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radiowhatsapp">WhatsApp</label>
                     
                 </fieldset>
+                <div class="error" id="error-contacto"></div>
                
                 <fieldset>
                     <legend>¿En qué horario prefiere ser atendido?</legend>
-                    <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
+                    <select title="Horario" id="hora">
+                        <option value="">Seleccione una franja horaria</option>
+                        <option value="MA">Mañana</option>
+                        <option value="TA">Tarde</option>
+                        <option value="NO">Noche</option>
                     </select>
                 </fieldset>
+                <div class="error" id="error-hora"></div>
                 
                 <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de HALLCROSS?</label>                
                 
-                <input type="submit" value="Enviar formulario" class="enviar">
+                <button type="button" id="btn-send" value="Submit" class="btn-1">Enviar</button>
 
             </form>
         </main>
-        <footer>
-            <img src="images/LOGO.png"  alt="Logo de HALLCROSS">
-            <p class="copyright">&copy Copyright HALLCROSS - 2024</p>
+        <footer class="footer">
+
+            <div class="footer-content container">
+    
+                <div class="link">
+                    <h3>CONTACTO</h3>
+                    <ul>
+                        <li><a href="mailto:hallcross@gmail.com">contacto@hallcross.com</a></li>
+                        <li><a href="+1130960485">113096-0485</a></li>
+                        <li><a href="#">Sarandi 945</a></li>
+                        <li><a href="#">Bs. As.</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>SÍGUENOS</h3>
+                    <ul>
+                        <li><a href="https://www.faceboock.com/hallcross">faceboock</a></li>
+                        <li><a href="https://www.instagram.com/hallcross">instagram</a></li>
+                        <li><a href="https://www.twiter.com/hallcross">X</a></li>
+                        <li><a href="https://www.linkedin.com/hallcross">linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>POLÍTICAS</h3>
+                    <ul>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Uso de imágenes</a></li>
+                        <li><a href="#">Cobertura de emergencias</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
+        <script src="./contacto.js"></script>
     </body>
 </html>

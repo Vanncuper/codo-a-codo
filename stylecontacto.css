@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#24272E;
+    color:whitesmoke;
+}
+
+
 form{
     margin: 40px 0;
 }
@@ -35,4 +57,149 @@ form label, form legend{
 .enviar:hover{
     background: darkorange;
     transform: scale(1.1);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header {
+    background: linear-gradient(
+        rgba(29,30,35,0.8),
+        rgba(29,30,35,0.8)
+    ),
+    url(images/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0 0 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Asegura que la imagen del logo esté centrada verticalmente */
+    margin-left: 30%;
+    margin-right: auto;  /* Empuja la imagen hacia la izquierda si hay otros elementos en la barra de navegación */
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que no haya espacio adicional alrededor de la imagen */
+    filter: drop-shadow(0 0 0.75rem #258980);
+    border-radius: 5%;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color:  #258980;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+ 
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+    padding: 0 200px;
+}
+
+.header-txt h1 {
+    font-size: 85px;
+    line-height: 1;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 17px;
+    color: #d4d4d4;
+    margin-bottom: 35px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: linear-gradient(
+        90deg,
+        rgba(245,99,72,1) 0%,
+        rgba(254,140,32,1) 100%
+    );
+}
+
+.error {
+    color: #258980;
+    margin-bottom: 5px;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #191a1f;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 17px;
+    color:  #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.link a {
+    font-size: 17px;
+    color: #d4d4d4 ;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #258980;
 }
