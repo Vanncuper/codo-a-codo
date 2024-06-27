@@ -12,7 +12,7 @@
     <header class="header">
         <div class="menu container">
             <a href="./index.html" class="logo">
-                <img src="images/logo.cambio.jpg" alt="logo de pagina" class="logo-img">
+                <img src="images/LOGO.png" alt="logo de pagina" class="logo-img">
             </a>
             <input type="checkbox" id="menu">
             <label for="menu">
@@ -48,13 +48,14 @@
         <div class="information-content">
             <div class="information-txt">
                 <span>HALLCROSS</span>
-                <h2>calcula tu masa corporal</h2>
+                <h2>Calcula tu Masa Corporal</h2>
                 <hr>
                 <form>
-                    <input type="text" placeholder="peso">
-                    <input type="text" placeholder="altura">
-                    <a href="#" class="btn-1">calcular</a>
+                    <input type="text" id="peso" placeholder="Peso (kg)">
+                    <input type="text" id="altura" placeholder="Altura (m)">
+                    <button type="button" id="btncalcularimc" class="btn-1">Calcular</button>
                 </form>
+                <div id="resultadoimc" class="resultadoimc"></div>
             </div>
             <div class="information-img">
                 <img src="images/f1.jpg" alt="">
@@ -128,4 +129,5 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body> </html>

@@ -4,13 +4,13 @@ let control = true
 btnSend.addEventListener('click', function () {
     let name = document.querySelector("#nombreapellido");
     let email = document.querySelector("#correoelectronico");
-    let telefono = document.querySelector("#telefono");
+    let telefono = document.getElementById('telefono').value;
     let textarea = document.querySelector("#mensaje");
     let remail = document.getElementById("radioemail");
     let rtel = document.getElementById("radiotelefono");
     let rwhats = document.getElementById("radiowhatsapp");
     let horario = document.getElementById('hora');
-
+    let telregex = /^[0-9]+$/;
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (name.value.trim() == '' || name.value.trim().length < 3) {
@@ -40,14 +40,20 @@ btnSend.addEventListener('click', function () {
         document.querySelector("#error-contacto").innerHTML = "selecciona una opcion de contacto";
         control = false;
     }
-    
-    let numer = parseInt(telefono)
-    if (!(Number.isInteger(numer))) {
+
+
+    if (telregex.test(telefono)) {
+        console.log(telefono);
+    } else {
         document.querySelector("#error-telefono").innerHTML = "Debes ingresar un numero valido";
         control = false;
+        console.log(telefono);
     }
 
 
-    if (control) { window.open('../index.html', '_self'); }
+
+    if (control) { 
+        alert("Formulario enviado, Gracias por su Contacto.");
+        window.open('./index.html', '_self'); }
     control = true;
 });
